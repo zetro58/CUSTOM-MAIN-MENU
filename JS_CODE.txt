@@ -1,0 +1,108 @@
+// ==UserScript==
+// @name         CUSTOM MAİN MENU FOR ZETRO
+// @namespace    http://tampermonkey.net/
+// @version      2024-06-15
+// @description  ÖZEL ANA MENÜ SCRİPT
+// @author       ZETRO
+// @match        https://www.google.com.tr/
+// @icon         https://i.ibb.co/cLXWyWF/IMG-20240430-232423-Photoroom-png-Photoroom.png
+// @grant        none
+// ==/UserScript==
+
+(function() {
+var time = new Date();
+document.querySelector('title').innerText="ANA MENÜ :)";
+var pp = document.createElement('link');
+pp.setAttribute('rel','icon');
+pp.setAttribute('type','image/png');
+pp.setAttribute('href','https://i.ibb.co/cLXWyWF/IMG-20240430-232423-Photoroom-png-Photoroom.png');
+var afkbtn = document.createElement('div');
+afkbtn.setAttribute('id','afkbtn');
+document.querySelector('.o3j99.n1xJcf.Ne6nSd').appendChild(afkbtn);
+document.head.appendChild(pp);
+var stylea = document.createElement('style');
+stylea.textContent ="body{animation:baslangic 1s linear;} html{animation:baslangic 2s linear;} @keyframes baslangic{0%{opacity:0;} 20%{opacity:.2;} 40%{opacity:.4;} 60%{opacity:.6;} 80%{opacity:.8;} 100&{opacity:1;}}";
+document.body.appendChild(stylea);
+var googleeskiyazi = document.querySelector(".lnXdpd");
+var ustkisim = document.querySelector('.LX3sZb');
+var alt1 = document.querySelector('.uU7dJb');
+var alt2 = document.querySelector(".KxwPGc.SSwjIe");
+ustkisim.remove();
+alt1.remove();
+alt2.remove();
+document.querySelector(".RNNXgb").style.border="12px double purple";
+googleeskiyazi.remove();
+document.body.style.background="url('https://i.ibb.co/hMFqCKc/1920x1200-px-planet-space-art-1060195-wallhere-com.jpg')";
+document.body.style.backgroundRepeat="no-repeat";
+document.body.style.backgroundSize="cover";
+var saat = document.createElement('h1');
+saat.setAttribute('id','saat');
+saat.textContent=time.getHours()+":"+time.getMinutes();
+saat.style.marginTop="17px";
+if(time.getMinutes() == "0" || time.getMinutes() == "1" || time.getMinutes() == "2" || time.getMinutes() == "3" || time.getMinutes() == "4" || time.getMinutes() == "5" || time.getMinutes() == "6" || time.getMinutes() == "7" || time.getMinutes() == "8" || time.getMinutes() == "9"){
+saat.textContent=time.getHours()+":0"+time.getMinutes();
+}
+saat.style.fontSize="60px";
+saat.style.textShadow="1px 1px 12px purple";
+saat.style.color="white";
+saat.style.textAlign="center";
+var yazi = document.createElement('h1');
+yazi.textContent="GOOGLE BY ZETRO";
+yazi.style.fontSize="60px";
+yazi.style.textShadow="1px 1px 12px purple";
+yazi.style.color="white";
+yazi.style.textAlign="center";
+document.querySelector(".o3j99.LLD4me.yr19Zb.LS8OJ").appendChild(yazi);
+document.querySelector(".o3j99.qarstb").appendChild(saat);
+setInterval(update,1000);
+function update(){
+var time = new Date();
+saat.setAttribute('id','saat');
+var zaman = saat.textContent=time.getHours()+":"+time.getMinutes();
+saat.style.fontSize="60px";
+saat.style.textShadow="1px 1px 12px purple";
+saat.style.color="white";
+saat.style.textAlign="center";
+if(time.getMinutes() == "0" || time.getMinutes() == "1" || time.getMinutes() == "2" || time.getMinutes() == "3" || time.getMinutes() == "4" || time.getMinutes() == "5" || time.getMinutes() == "6" || time.getMinutes() == "7" || time.getMinutes() == "8" || time.getMinutes() == "9"){
+zaman = saat.textContent=time.getHours()+":0"+time.getMinutes();
+}
+document.querySelector("#saat").innerText=zaman;
+//https://i.ibb.co/jyKG7Y1/ilk.png
+}
+var alt3 = document.querySelector('.FPdoLc.lJ9FBc');
+alt3.remove();
+document.querySelector('.o3j99.qarstb').innerHTML+="<center><div class='yt'></div><div class='yt'></div><div class='yt'></div><div class='yt'></div><div class='yt'></div><div class='yt'></div><div class='yt'></div><div class='yt'></div></center>";
+var style = document.createElement('style');
+style.textContent="#afkbtn:hover{transition:opacity .3s;opacity:1;}#afkbtn{transition:opacity .3s;opacity:.6;margin-left:93%;margin-top:30px;border:2px double purple;width:145px; height:70px; background-image:url('https://i.ibb.co/jyKG7Y1/ilk.png'); background-repeat:no-repeat; background-size:cover;} .yt:nth-of-type(8){background-image:url('https://img.freepik.com/premium-vector/kick-logo-vector-download-kick-streaming-icon-logo-vector-eps_691560-10814.jpg');}.yt:nth-of-type(7){background-image:url('https://freelogopng.com/images/all_img/1656152266logo-twitch.png');}.yt:nth-of-type(6){background-image:url('https://logowik.com/content/uploads/images/translate2496.jpg');}.yt:nth-of-type(5){background-image:url('https://d10-invdn-com.investing.com/company_logo/a73b1e2d4e89e960130e9051313a87a4.jpg');}.yt:nth-of-type(4){background-image:url('https://static.vecteezy.com/system/resources/thumbnails/027/395/710/small/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png');}.yt:nth-of-type(3){background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png');}.yt:nth-of-type(1){background-image:url('https://pngfre.com/wp-content/uploads/You-Tube-14.png');}.yt:nth-of-type(2){background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png');} .yt {margin-left:13px; margin-right:13px; display:inline-block;} .RNNXgb{transition:padding .5s;} .RNNXgb:hover{padding-top:20px;} .yt:hover{opacity:1; border-radius:40%; transition:border-radius,opacity .3s;} .yt{opacity:.5; transition:border-radius,opacity .3s; width:100px; height:100px; background-size:cover; box-shadow:0px 1px 0px 5px red; border-radius:50%; border:12px double purple;}";
+document.body.appendChild(style);
+let youtube_yt = document.querySelector(".yt:nth-child(1)");
+let instagram_yt = document.querySelector(".yt:nth-child(2)");
+let tiktok_yt = document.querySelector(".yt:nth-child(3)");
+let x_yt = document.querySelector(".yt:nth-child(4)");
+let binance_yt = document.querySelector(".yt:nth-child(5)");
+let deepl_yt = document.querySelector(".yt:nth-child(6)");
+let twich_yt = document.querySelector(".yt:nth-child(7)");
+let afkmodu = "0";
+let kick_yt = document.querySelector(".yt:nth-child(8)");
+let afkdugme = document.querySelector("#afkbtn");
+function afk(){alert("AFK MODU AÇILDI !");afkmodu="1";var deathstyle = document.createElement("style");deathstyle.textContent=".yt{display:none;}h1{display:none;}.RNNXgb{display:none;}";document.body.appendChild(deathstyle);}
+function antiafk(){alert("AFK MODU KAPATILDI !");afkmodu="0";var burnstyle = document.createElement("style");burnstyle.textContent=".yt{display:inline-block;}h1{display:block;}.RNNXgb{display:block;}";document.body.appendChild(burnstyle);}
+function olay(){if(afkmodu == "1"){antiafk();}else if(afkmodu == "0"){afk();}}
+function playclick (){window.open('https://www.youtube.com.tr', "_blank");}
+function playclick1 (){window.open('https://www.instagram.com/', "_blank");}
+function playclick2 (){window.open('https://mail.google.com/mail/u/0/#inbox', "_blank");}
+function playclick3 (){window.open('https://x.com/?lang=tr', "_blank");}
+function playclick4 (){window.open('https://tr.investing.com/crypto/', "_blank");}
+function playclick5 (){window.open('https://www.deepl.com/tr/translator', "_blank");}
+function playclick6 (){window.open('https://www.twitch.tv/', "_blank");}
+function playclick7 (){window.open('https://kick.com/', "_blank");}
+afkdugme.addEventListener('click',olay);
+youtube_yt.addEventListener('click',playclick);
+instagram_yt.addEventListener('click',playclick1);
+tiktok_yt.addEventListener('click',playclick2);
+x_yt.addEventListener('click',playclick3);
+binance_yt.addEventListener('click',playclick4);
+deepl_yt.addEventListener('click',playclick5);
+twich_yt.addEventListener('click',playclick6);
+kick_yt.addEventListener('click',playclick7);
+})();
